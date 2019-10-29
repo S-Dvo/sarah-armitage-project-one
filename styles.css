@@ -467,11 +467,25 @@ legend {
         float: none;
     } */
 
+    footer nav {
+        float: none;
+        width: 100%;
+    }
+
+    footer .contact {
+        float: left;
+        /* width: 50%; */
+        /* margin-top: 50px; */
+    }
+
+    footer form {
+        /* width: 60%; */
+    }
     
     footer .contact, 
     footer nav,
     footer form {
-        float: none;
+        /* float: none; */
     }
 
     footer nav {
@@ -481,6 +495,40 @@ legend {
 
     footer nav li {
         float: left;
+    }
+
+    footer nav a {
+        padding-left: 40px;
+    }
+
+    footer nav li:first-of-type a {
+        padding: 0;
+    }
+
+    footer form div {
+        /* width: max-content; */
+        margin: 0 auto;
+    }
+
+    footer .contact {
+        /* width: max-content; */
+        margin: 0 auto;
+        text-align: center;
+        width: 40%;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 920px) {
+    footer .contact, 
+    footer nav,
+    footer form {
+        float: none;
+    }
+
+    footer nav {
+        width: max-content;
+        margin: 0 auto;
     }
 
     footer nav a {
@@ -503,9 +551,7 @@ legend {
     }
 }
 
-@media (max-width: 980px) {
 
-}
 
 @media (max-width: 768px) {
     .section1 .image-container,
@@ -565,52 +611,6 @@ legend {
         margin: 0 auto;
         padding: 30px 0;
     }  
-}
-
-@media (max-width: 800px) {
-    /* .section4a, 
-    .section4b {
-        padding: 20px;
-    } */
-
-    .section4a {
-        padding-top: 80px;
-        padding-bottom: 40px;
-    }
-
-    .section4b {
-        padding-bottom: 80px;
-        padding-top: 40px;
-    }
-
-    .section4a .text-container {
-        /* background-image: url(./Paint-gallery-assets/right-image.jpg); */
-        /* color: white; */
-        text-align: center;
-        margin: 0 auto;
-        padding: 50px;
-        width: 80%;
-    }
-
-    .section4b .text-container {
-        /* background-image: url(./Paint-gallery-assets/left-image.jpg); */
-        /* color: white; */
-        text-align: center;
-        margin: 0 auto;
-        padding: 50px;
-        float: none;
-        width: 80%;
-    }
-
-    .section4a::after,
-    .section4b::after {
-        display: none;
-    }
-
-    .section4a .wrapper::before {
-        background-image: url(./Paint-gallery-assets/left-image.jpg);
-
-    }
 }
 
 @media (max-width: 550px) {
