@@ -179,7 +179,7 @@ header i {
 .section1 img {
     display: block;
     object-fit: cover;
-    height: 336.75px;
+    /* height: 336.75px; */
 }
 
 .section1 button {
@@ -246,6 +246,12 @@ margin-left: 20px;
 .section3 i {
     font-size: 70px;
     color: #0178A5;
+    transition: color 250ms ease-in-out;
+}
+
+.section3 a:hover i {
+    color: rgb(21, 80, 101);
+    cursor: pointer;
 }
 
 /* -----------SECTION 4 STYLES--------------- */
@@ -305,12 +311,15 @@ margin-left: 20px;
     float: left;
 } */
 
+
 .section4a button,
 .section4b button {
     background-color: #A7059B;
+    transition: background-color 250ms ease-in-out;
 }
 
-.section4 button:hover {
+.section4a button:hover,
+.section4b button:hover {
     background-color: rgb(129, 20, 122);
 }
 
@@ -490,16 +499,6 @@ legend {
         float: left;
         /* width: 50%; */
         /* margin-top: 50px; */
-    }
-
-    footer form {
-        /* width: 60%; */
-    }
-    
-    footer .contact, 
-    footer nav,
-    footer form {
-        /* float: none; */
     }
 
     footer nav {
@@ -750,6 +749,10 @@ legend {
         width: max-content;
         margin: 0 auto;
         /* margin-top: 20px; */
+    }
+
+    .section4a {
+        padding-top: 0;
     }
 
     .section4a .image-right,
