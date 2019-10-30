@@ -72,7 +72,7 @@ nav {
 
 img {
     /* max-width: 100%; */
-    width: 100%;
+    max-width: 100%;
 	display: block;
 }
 
@@ -112,6 +112,15 @@ header {
     min-height: 100vh;
     max-width: 1280px;
     padding: 30px 0;
+}
+
+header .fa {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 4.5rem;
+    visibility: hidden;
+    color: white;
 }
 
 h1 {
@@ -520,6 +529,49 @@ legend {
 }
 
 @media (max-width: 920px) {
+     header {
+        height: 100vh;
+        padding: 10px 20px;
+    }
+    header nav {
+        display: none;
+    }
+
+    header .fab {
+        display: none;
+    } 
+
+    header .fa {
+        visibility: visible;
+    }
+
+    .headerW {
+        max-width: 100%;
+    }
+
+    .section1 .image-container {
+        width: max-content;
+        margin-top: 50px;
+        margin-right: 20px;
+    }
+
+    .section1 .text-container {
+        width: 50%;
+        margin: 0;
+    }
+
+    /* .section1 .image-container {
+        width: max-content;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .section1 .text-container {
+        width: 100%;
+        float: none;
+
+    } */
+
     footer .contact, 
     footer nav,
     footer form {
@@ -551,24 +603,10 @@ legend {
     }
 }
 
-
-
-@media (max-width: 768px) {
-    .section1 .image-container,
-    .section1 .text-container {
-        float: none;
-    }
-
-    .section1 button {
-        /* width: 180px; */
-        display: block;
-        margin: 0 auto;
-        margin-top: 40px;
-    }
-
+@media (max-width: 800px) {
     .section1 .image-container {
-        width: 100%;
-        /* display: inline-block; */
+        float: none;
+        max-width: 100%;
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -576,13 +614,24 @@ legend {
     .section1 .text-container {
         width: 100%;
         padding: 20px;
-        /* text-align: center; */
     }
 
-    .section1  h2,
-    .section1 button {
-        text-align: center;
-    } 
+    .section4a {
+        
+    }
+}
+
+@media (max-width: 768px) {
+     /* .section1 .image-container {
+        width: max-content;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .section1 .text-container {
+        width: 50%;
+        margin: 0;
+    } */
 
 
     .section2 li:nth-of-type(2) {
@@ -614,6 +663,45 @@ legend {
 }
 
 @media (max-width: 550px) {
+    .section1 {
+        padding: 50px;
+        /* padding: 0; */
+    }
+    .section1 .image-container,
+    .section1 .text-container {
+        float: none;
+    }
+
+    .section1 button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    .section1 .image-container {
+        /* max-width: 100%; */
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .section1 .text-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .section1 button {
+        text-align: center;
+    } 
+
+
+    .section1 .image-container {
+        /* width: max-content; */
+    }
+
+    .section1 h2 {
+        font-size: 6.0rem;
+    }
     input[type="email"] {
         margin-bottom: 10px;
     }
