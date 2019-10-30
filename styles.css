@@ -6,6 +6,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
+/* -----------COLOURS--------------- */
+
+/* #FFE9E9
+#F7DAE8
+#A7059B
+#201E21 */
+
+
 /* -----------REMOVE DEFAULTS--------------- */
 body, h1, h2, h3, h4, p, ul, li {
 	margin: 0;
@@ -57,7 +65,6 @@ h3, h4, legend {
 
 button {
     font-size: 4.5rem;
-    /* border-radius: 5px; */
     display: inline-block;
     color: white;
     padding: 0 20px;
@@ -71,7 +78,6 @@ nav {
 }
 
 img {
-    /* max-width: 100%; */
     max-width: 100%;
 	display: block;
 }
@@ -79,28 +85,6 @@ img {
 .wrapper {
     max-width: 1080px;
     margin: 0 auto;
-    /* background-color: grey;  */
-}
-
-/* -----------COLOURS--------------- */
-.primary {
-	background-color: #FFE9E9;
-}
-
-.secondary {
-	background-color: #F7DAE8;
-}
-
-.button-colour1 {
-    background-color: rgb(21, 80, 101);
-}
-
-.button-colour2 {
-    background-color: #A7059B; 
-}
-
-.text-colour {
-    color: #201E21;
 }
 
 /* -----------HEADER STYLES--------------- */
@@ -155,20 +139,10 @@ header i {
     padding: 80px 0;
 }
 
-/* .section1 .wrapper {
-    padding: 40px 80px;
-} */
-
 .section1 .image-container {
     width: calc(35% - 10px);
     float: left;
     margin-right: 20px;
-
-    /* background-image: url(./Paint-gallery-assets/small-box.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
-    /* height: 336.75px; */
 }
 
 .section1 .text-container {
@@ -179,7 +153,6 @@ header i {
 .section1 img {
     display: block;
     object-fit: cover;
-    /* height: 336.75px; */
 }
 
 .section1 button {
@@ -195,12 +168,6 @@ header i {
 .section1 h2 {
     margin-bottom: 20px;
 }
-
-/* @media (max-height:600px){
-    .section1 .image-container {
-        height:auto;
-    }
-} */
 
 /* -----------SECTION 2 STYLES--------------- */
 .section2 {
@@ -260,7 +227,6 @@ margin-left: 20px;
     background-color: #F7DAE8;
     padding: 100px 0;
     position: relative;
-    /* border: 2px solid red; */
 }
 
 .section4a .image-right,
@@ -299,18 +265,10 @@ margin-left: 20px;
     padding-right: 100px;
 }
 
-
 .section4b .text-container {
     float: right;
     padding-left: 100px;
 }
-
-/* .section4 .image-container,
-.section4 .text-container {
-    width: 50%;
-    float: left;
-} */
-
 
 .section4a button,
 .section4b button {
@@ -321,24 +279,6 @@ margin-left: 20px;
 .section4a button:hover,
 .section4b button:hover {
     background-color: rgb(129, 20, 122);
-}
-
-/* .section4 .image-container {
-    position: absolute;
-} */
-
-/* body {
-    position: relative;
-} */
-
-.image-right {
-    /* width: 50%; */
-    /* right: 0;
-    bottom: 0; */
-}
-
-.image-left {
-    /* left: 0; */
 }
 
 .section4a h2,
@@ -352,19 +292,12 @@ margin-left: 20px;
     margin: 20px 0;
 }
 
-
-
 /* -----------FOOTER STYLES--------------- */
 footer {
     background-color: #FFE9E9;
 }
 
-/* footer .wrapper {
-    padding: 60px 0;
-} */
-
 footer .infoSection {
-    /* padding: 100px 0; */
     padding: 60px 0;
 }
 
@@ -383,59 +316,36 @@ footer nav li {
     padding: 15px 0;
 }
 
-/* footer nav, 
-form, 
-.contact  {
-    float: left;
-} */
-
 
 footer nav, .contact {
     margin-top: 45px;
 }
 
-
 form {
-    /* width: 55%; */
-    /* clear: both; */
     float: left;
 }
 
-/* nav, 
-.contact {
-    float: right;
-    width: 30%;
-} */
-
 footer nav {
-    /* width: 15%; */
     float: left;
     margin-right: 200px;
 }
 
 .contact {
     text-align: right;
-    /* width: 30%; */
     float: right;
 }
 
 form {
-    /* margin-left: 200px; */
-    /* margin-left: 155px; */
     text-align: center;
     margin-top: 15px;
-    /* margin: 0 10px 0 100px; */
 }
 
 form p {
     margin-bottom: 10px;
 }
 
-
 input {
     height: 50px;
-    
-    /* vertical-align: middle; */
     float: left;
 }
 
@@ -460,7 +370,6 @@ button[type="submit"] {
 
 fieldset {
     border: none;
-    /* margin: 0 10px 0 100px; */
 }
 
 legend {
@@ -472,6 +381,7 @@ legend {
 }
 
 /* --------MEDIA QUERIES---------- */
+/* max-width: 1200px */
 @media (max-width: 1200px) {
     .wrapper {
         max-width: 90%;
@@ -484,12 +394,6 @@ legend {
 }
 
 @media (max-width: 1140px) {
-    /* footer nav, 
-    footer form, 
-    footer .contact {
-        float: none;
-    } */
-
     footer nav {
         float: none;
         width: 100%;
@@ -497,8 +401,6 @@ legend {
 
     footer .contact {
         float: left;
-        /* width: 50%; */
-        /* margin-top: 50px; */
     }
 
     footer nav {
@@ -519,12 +421,10 @@ legend {
     }
 
     footer form div {
-        /* width: max-content; */
         margin: 0 auto;
     }
 
     footer .contact {
-        /* width: max-content; */
         margin: 0 auto;
         text-align: center;
         width: 40%;
@@ -532,6 +432,7 @@ legend {
     }
 }
 
+/* max-width: 920px */
 @media (max-width: 920px) {
      header {
         height: 100vh;
@@ -564,18 +465,6 @@ legend {
         margin: 0;
     }
 
-    /* .section1 .image-container {
-        width: max-content;
-        float: none;
-        margin: 0 auto;
-    }
-
-    .section1 .text-container {
-        width: 100%;
-        float: none;
-
-    } */
-
     footer .contact, 
     footer nav,
     footer form {
@@ -607,6 +496,7 @@ legend {
     }
 }
 
+/* max-width: 80px */
 @media (max-width: 800px) {
     .section1 .image-container {
         float: none;
@@ -645,7 +535,6 @@ legend {
     .section4a .image-right,
     .section4b .image-left {
     display: block;
-    /* width: 100%; */
     width: 500px;
     margin: 0 auto;
     }
@@ -656,19 +545,8 @@ legend {
     }
 }
 
+/* max-width: 768px */
 @media (max-width: 768px) {
-     /* .section1 .image-container {
-        width: max-content;
-        margin-top: 50px;
-        margin-right: 0;
-    }
-
-    .section1 .text-container {
-        width: 50%;
-        margin: 0;
-    } */
-
-
     .section2 li:nth-of-type(2) {
         display: none;
     }
@@ -695,14 +573,12 @@ legend {
         margin: 0 auto;
         padding: 30px 0;
     }  
-
-    
 }
 
+/* max-width: 550px */
 @media (max-width: 550px) {
     .section1 {
         padding: 50px;
-        /* padding: 0; */
     }
     .section1 .image-container,
     .section1 .text-container {
@@ -731,11 +607,6 @@ legend {
         text-align: center;
     } 
 
-
-    .section1 .image-container {
-        /* width: max-content; */
-    }
-
     .section1 h2 {
         font-size: 6.0rem;
     }
@@ -748,7 +619,6 @@ legend {
         clear: both;
         width: max-content;
         margin: 0 auto;
-        /* margin-top: 20px; */
     }
 
     .section4a {
